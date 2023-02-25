@@ -16,32 +16,20 @@ public class GameManager : MonoBehaviour
 	[SerializeField] Tank tank2;
 
 	// Start is called before the first frame update
-	void Start ()
+	void OnEnable ()
 	{
-		Bullet.OnBulletDestroyed += Bullet_OnBulletDestroyed;
-	}
-
-	private void Bullet_OnBulletDestroyed (PlayerEnum playerEnum)
-	{
-		
-	}
-
-	// Update is called once per frame
-	void Update ()
-	{
-
+		Bullet.OnBulletDestroyed += OnBulletDestroyed;
 	}
 
 	void OnBulletDestroyed(PlayerEnum playerEnum)
 	{
 		switch(playerEnum) {
 			case PlayerEnum.Player1:
-				// incease player2 bullet by calling method in Tank
+				tank2.AddBullet();
+				break;	
+			case PlayerEnum.Player2:
+				tank1.AddBullet();
 				break;
-				// opposite thing in other case.
 		}
 	}
-
-
-
 }

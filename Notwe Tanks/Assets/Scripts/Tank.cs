@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Assets.Scripts;
 
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class Tank : MonoBehaviour
@@ -17,7 +18,9 @@ public class Tank : MonoBehaviour
 	[SerializeField] float rotateSpeed = 1;
 	[SerializeField] float cooldownTime = 0.25f;
 
-	
+	public event UnityAction<int> OnLivesChanged;
+	public event UnityAction<int> OnBulletsChanged;
+
 
 	public PlayerEnum GetPlayer => playerEnum;
 
