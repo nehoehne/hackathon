@@ -15,17 +15,23 @@ public class GameManager : MonoBehaviour
 	[SerializeField] Tank tank1;
 	[SerializeField] Tank tank2;
 
-	 // Start is called before the first frame update
-	 void Start()
-	 {
-		  
-	 }
+	// Start is called before the first frame update
+	void Start ()
+	{
 
-	 // Update is called once per frame
-	 void Update()
-	 {
-		  
-	 }
+	}
+
+	// Update is called once per frame
+	void Update ()
+	{
+
+	}
+
+	void OnBulletDestroyed(PlayerEnum playerEnum)
+	{
+
+	}
+
 
 
 }
