@@ -13,7 +13,6 @@ public class WrappingBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		Debug.Log("YO");
 		Vector3 pos = transform.position;
 		if (transform.position.x > 80)
 		{
