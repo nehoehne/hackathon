@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4443920893090763638}
   - component: {fileID: 4875275562449705980}
   - component: {fileID: 2141014826493058902}
+  - component: {fileID: 3275565485646574743}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1759580829
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 0b022a57ff9fa454a8bc2dfbae30f6fd, type: 3}
   m_Color: {r: 0.014231682, g: 0, b: 1, a: 1}
@@ -98,4 +99,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerEnum: 0
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: -2178304310126688246, guid: 96ffc7c9d532e324db5cee7620347514, type: 3}
+--- !u!114 &3275565485646574743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7938130362853949723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25f8d8861d1d3b4699813104f0dd78d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
