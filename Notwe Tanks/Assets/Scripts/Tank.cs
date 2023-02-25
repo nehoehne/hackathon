@@ -54,6 +54,7 @@ public class Tank : MonoBehaviour
 		Move();
 	}
 
+
 	public void ShootBullet()
 	{
 		// add logic
@@ -85,8 +86,14 @@ public class Tank : MonoBehaviour
 	internal void OnMove (InputValue value)
 	{
 		var input = value.Get<Vector2>();
+
+
+
 		moveInput = input.y;
 		rotateInput = input.x;
+
+		Debug.Log($"{nameof(moveInput)}:{moveInput}");
+		Debug.Log($"{nameof(rotateInput)}:{rotateInput}");
 	}
 
 	// InputControl callback
@@ -100,10 +107,7 @@ public class Tank : MonoBehaviour
 
 	private void Move ()
 	{
-		Debug.Log($"{nameof(moveInput)}:{moveInput}");
-		Debug.Log($"{nameof(rotateInput)}:{rotateInput}");
-
-		rigidbody2.velocity = transform.up * moveSpeed;
+		rigidbody2.velocity = moveInput * moveSpeed * transform.up;
 		rigidbody2.rotation += rotateInput * rotateSpeed;
 	}
 }

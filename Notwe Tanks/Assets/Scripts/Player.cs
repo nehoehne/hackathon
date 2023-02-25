@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
 	[SerializeField] float paddingTop = 0.5f;
 	[SerializeField] float paddingBottom = 0.5f;
 
-	Shooter shooter;
+	//Shooter shooter;
 
 	Vector2 rawInput;
 	Vector2 minScreenBounds;
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
 
 	void Awake()
 	{
-		shooter = GetComponent<Shooter>();
+		//shooter = GetComponent<Shooter>();
 		Instance = this;
 	}
 
@@ -58,10 +58,10 @@ public class Player : MonoBehaviour
 
 	internal void OnFire(InputValue value)
 	{
-		if (shooter != null)
-		{
-			shooter.IsFiring = value.isPressed;
-		}
+		//if (shooter != null)
+		//{
+		//	shooter.IsFiring = value.isPressed;
+		//}
 	}
 
 	void Move()

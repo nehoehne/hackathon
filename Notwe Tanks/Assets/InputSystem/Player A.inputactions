@@ -1,33 +1,24 @@
 {
-    "name": "Player1",
+    "name": "Player 1",
     "maps": [
         {
             "name": "Player",
-            "id": "1fe4ac1b-cff8-46f5-b982-50bc14053da9",
+            "id": "08a1c16c-17bb-430a-98d6-2c46f02e81d4",
             "actions": [
                 {
-                    "name": "Fire",
-                    "type": "Button",
-                    "id": "148a4aa2-73bd-4689-bb4d-15d693dc2bb5",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "TankMove",
-                    "type": "Value",
-                    "id": "2c0cfda1-e9af-4b27-b3f2-d442a1210c8b",
-                    "expectedControlType": "Analog",
-                    "processors": "",
+                    "name": "Move",
+                    "type": "PassThrough",
+                    "id": "dc51fb9a-fc29-4e61-8fc0-d592640535f3",
+                    "expectedControlType": "Vector2",
+                    "processors": "NormalizeVector2",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Move",
+                    "name": "Fire",
                     "type": "Value",
-                    "id": "af6fefc3-0c18-4f74-b99b-dd52f9de4ea2",
-                    "expectedControlType": "Button",
+                    "id": "7a3d108f-fbf1-4722-8f9c-fa4fdec24279",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -35,85 +26,63 @@
             ],
             "bindings": [
                 {
-                    "name": "Speed",
-                    "id": "be322e92-f5b6-41da-ba3b-09f6358f8536",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TankMove",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "1f1f9039-2e2d-4c80-8f36-775592717cfc",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TankMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "68dc3d22-a1a1-40aa-b2a9-638a27625497",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TankMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Rotation",
-                    "id": "96bc926f-04e0-4298-98d6-78f1f752141e",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TankMove",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "9f2818c9-fe4f-4d7c-90dc-53972a2d6ddd",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TankMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "53298387-56ae-450e-983c-933db5e7b30a",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TankMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "7e567c0c-931a-49f3-9a73-948ac0eee145",
-                    "path": "",
+                    "name": "WASD",
+                    "id": "00ca640b-d935-4593-8157-c05846ea39b3",
+                    "path": "Dpad",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "isComposite": false,
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "up",
+                    "id": "e2062cb9-1b15-46a2-838c-2f8d72a0bdd9",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "320bffee-a40b-4347-ac70-c210eb8bc73a",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "d2581a9b-1d11-4566-b27d-b92aff5fabbc",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "fcfe95b8-67b9-4526-84b5-5d0bc98d6400",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
-                    "id": "9dc78856-4141-4cb7-aa60-7976a37bd2a7",
+                    "id": "408200f5-4fdb-4a85-ba72-9c011c2e4ca5",
                     "path": "<Keyboard>/leftShift",
                     "interactions": "",
                     "processors": "",
