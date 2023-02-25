@@ -24,5 +24,11 @@ public class Tank : MonoBehaviour
 
 	}
 
+	public ShootBullet()
+	{
+		var bullet = Instantiate(bulletPrefab);
+		bullet.ShotBy = playerEnum;
+	}
+
 
 }

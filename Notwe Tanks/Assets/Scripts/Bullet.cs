@@ -1,11 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+
+using Assets.Scripts;
+
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+	public PlayerEnum ShotBy { get; set; }
+
+	public delegate void BulletEvent (PlayerEnum playerEnum);
+	public static event BulletEvent OnBulletDestroyed;
+
+	// Start is called before the first frame update
+	void Start()
     {
         
     }
@@ -15,4 +23,16 @@ public class Bullet : MonoBehaviour
     {
         
     }
+
+
+
+
+
+
+	private void OnTriggerEnter2D (Collider2D collision)
+	{
+		if (OnBulletDestroyed != null) {
+			OnBulletDestroyed(ShotBy);
+		}
+	}
 }
