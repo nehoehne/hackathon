@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bound
   layers:
   - Default
   - TransparentFX
@@ -46,4 +47,7 @@ TagManager:
     locked: 0
   - name: Walls
     uniqueID: 324581721
+    locked: 0
+  - name: Player
+    uniqueID: 2682119239
     locked: 0
