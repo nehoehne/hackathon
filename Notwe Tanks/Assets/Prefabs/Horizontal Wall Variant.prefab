@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 665446616305927851, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 665446616305927851, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 970186161870586197, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
       propertyPath: m_Name
-      value: Horizontal Wall
+      value: Horizontal Wall Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
