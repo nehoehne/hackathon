@@ -65,10 +65,7 @@ public class Bullet : MonoBehaviour
 		//myBody.MovePosition(tankBody.position);
 		//myBody.MoveRotation(tankBody.rotation);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> main
+s
 		myBody.velocity = tank.transform.up * speed;
 		Debug.Log(transform.forward);
 		ShotBy = tank.GetPlayer;
