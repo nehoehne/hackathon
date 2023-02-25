@@ -24,7 +24,7 @@ public class Tank : MonoBehaviour
 
 	}
 
-	public ShootBullet()
+	public void ShootBullet()
 	{
 		var bullet = Instantiate(bulletPrefab);
 		bullet.ShotBy = playerEnum;
