@@ -27,9 +27,29 @@ public class Bullet : MonoBehaviour
 
 	// Start is called before the first frame update
 	void Start()
+<<<<<<< HEAD
 	{
 		Destroy(gameObject, 5f);
 	}
+=======
+    {
+        Destroy(gameObject, 5f);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+	public void InitBullet(Tank tank)
+	{
+		//Rigidbody2D tankBody = tank.GetComponent<Rigidbody2D>();
+
+		// set position and rotation to same as tank that shot it
+		//myBody.MovePosition(tankBody.position);
+		//myBody.MoveRotation(tankBody.rotation);
+>>>>>>> main
 
 	// Update is called once per frame
 	void Update()
@@ -45,7 +65,10 @@ public class Bullet : MonoBehaviour
 		//myBody.MovePosition(tankBody.position);
 		//myBody.MoveRotation(tankBody.rotation);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 		myBody.velocity = tank.transform.up * speed;
 		Debug.Log(transform.forward);
 		ShotBy = tank.GetPlayer;

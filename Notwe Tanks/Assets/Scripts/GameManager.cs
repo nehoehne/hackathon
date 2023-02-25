@@ -18,7 +18,12 @@ public class GameManager : MonoBehaviour
 	// Start is called before the first frame update
 	void Start ()
 	{
+		Bullet.OnBulletDestroyed += Bullet_OnBulletDestroyed;
+	}
 
+	private void Bullet_OnBulletDestroyed (PlayerEnum playerEnum)
+	{
+		
 	}
 
 	// Update is called once per frame
@@ -29,7 +34,12 @@ public class GameManager : MonoBehaviour
 
 	void OnBulletDestroyed(PlayerEnum playerEnum)
 	{
-
+		switch(playerEnum) {
+			case PlayerEnum.Player1:
+				// incease player2 bullet by calling method in Tank
+				break;
+				// opposite thing in other case.
+		}
 	}
 
 
