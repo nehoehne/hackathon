@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &8658576374490667201
+--- !u!1001 &7969600152795052504
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -13,19 +13,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 665446616305927851, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 665446616305927851, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
-      propertyPath: m_LocalScale.y
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 665446616305927851, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 665446616305927851, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -32.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 665446616305927851, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -61,15 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 970186161870586197, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
       propertyPath: m_Name
-      value: Vertical Wall Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 5076152236743408994, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5076152236743408994, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 324581721
+      value: Horizontal Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f208e4d0a6a3cd54eb0a12728a2c820f, type: 3}
