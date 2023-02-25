@@ -19,6 +19,7 @@ public class Bullet : MonoBehaviour
 
 	void Awake()
 	{
+		Debug.Log("Bullet has been shot");
 		//called once
 
 		myBody = gameObject.GetComponent<Rigidbody2D>();
@@ -54,6 +55,11 @@ public class Bullet : MonoBehaviour
 
 	private void OnTriggerEnter2D (Collider2D collision)
 	{
+		var tank = collision.GetComponent<Tank>();
+		if (tank != null && tank.GetPlayer == ShotBy) {
+			return;
+		}
+
 		if (OnBulletDestroyed != null) {
 			OnBulletDestroyed(ShotBy);
 			// destory this gameojbect

@@ -15,7 +15,7 @@ public class Tank : MonoBehaviour
 	[Header("Movement")]
 	[SerializeField] float moveSpeed = 1;
 	[SerializeField] float rotateSpeed = 1;
-	[SerializeField] float cooldownTime = 2f;
+	[SerializeField] float cooldownTime = 0.25f;
 
 	
 
@@ -86,23 +86,14 @@ public class Tank : MonoBehaviour
 	internal void OnMove (InputValue value)
 	{
 		var input = value.Get<Vector2>();
-
-
-
 		moveInput = input.y;
-		rotateInput = input.x;
-
-		Debug.Log($"{nameof(moveInput)}:{moveInput}");
-		Debug.Log($"{nameof(rotateInput)}:{rotateInput}");
+		rotateInput = -input.x;
 	}
 
 	// InputControl callback
-	internal void OnFire (InputValue value)
+	internal void OnFire ()
 	{
-		Debug.Log("OnFire: " + value.ToString());
-		if( value.isPressed) {
-			ShootBullet();
-		}
+		ShootBullet();
 	}
 
 	private void Move ()

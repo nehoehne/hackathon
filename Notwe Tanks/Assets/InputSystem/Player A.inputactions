@@ -1,5 +1,5 @@
 {
-    "name": "Player 1",
+    "name": "Player A",
     "maps": [
         {
             "name": "Player",
@@ -16,9 +16,9 @@
                 },
                 {
                     "name": "Fire",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "7a3d108f-fbf1-4722-8f9c-fa4fdec24279",
-                    "expectedControlType": "",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -83,7 +83,7 @@
                 {
                     "name": "",
                     "id": "408200f5-4fdb-4a85-ba72-9c011c2e4ca5",
-                    "path": "<Keyboard>/leftShift",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
