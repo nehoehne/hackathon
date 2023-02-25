@@ -31,6 +31,7 @@ public class Tank : MonoBehaviour
 
 
 	private Rigidbody2D rigidbody2;
+	private AudioSource audioSource;
 
 	float moveInput;
 	float rotateInput;
@@ -45,6 +46,7 @@ public class Tank : MonoBehaviour
 	void Start ()
 	{
 		numBullets = INITIAL_NUM_BULLETS;
+		audioSource = GetComponent<AudioSource>();
 	}
 
 	private float i = 0;
@@ -74,6 +76,7 @@ public class Tank : MonoBehaviour
 			
 			numBullets--;
 			cooldown = cooldownTime;
+			audioSource.Play();
 		}
 	}
 

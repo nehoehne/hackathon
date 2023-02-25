@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: b77df2738b9729845a805d6a6e500fd8
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Tabaiba wild ffp
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 85099eac96b500746ba1ed150c3e6264, type: 3}
+  - {fileID: 12800000, guid: 574dcb4217da5c94798cc9aae053491a, type: 3}
+  - {fileID: 12800000, guid: a6578752029893645a4fad7099677dff, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
