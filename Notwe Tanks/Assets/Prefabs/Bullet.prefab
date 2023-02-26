@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 50
-  thing: 0
+  explosionPrefab: {fileID: 5213653979021814234, guid: 1094773d916e42348b9d7faad7c71696, type: 3}
 --- !u!212 &5414735132805509470
 SpriteRenderer:
   m_ObjectHideFlags: 0
