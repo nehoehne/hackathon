@@ -34,33 +34,6 @@ class LevelManager : MonoBehaviour
 	}
 
 
-	//public static LevelManager Instance { get; private set; } = null;
-
-	//void Awake ()
-	//{
-	//	if( Instance == null ) {
-	//		Instance = this;
-	//		DontDestroyOnLoad(gameObject);
-	//	}
-	//	else {
-	//		gameObject.SetActive(false);
-	//		DestroyImmediate(gameObject);
-	//	}
-	//}
-
-	//public void LoadLevel (SceneEnum scene)
-	//{
-	//	SceneManager.LoadScene(SceneEnumToString(scene));
-	//}
-
-	//public void LoadLevel(string levelName)
-	//{
-	//	SceneManager.LoadScene(levelName);
-	//}
-
-
-
-
 	public void LoadMainMenu ()
 	{
 		SceneManager.LoadScene("Main Menu");
@@ -78,18 +51,12 @@ class LevelManager : MonoBehaviour
 
 	public void LoadGameOver ()
 	{
-		StartCoroutine(WaitAndLoadLevel("Game Over", sceneLoadDelay));
+		SceneManager.LoadScene("Game Over");
 	}
 
 	public void QuitGame ()
 	{
 		Debug.Log("Quiting Game...");
 		Application.Quit();
-	}
-
-	public IEnumerator WaitAndLoadLevel (string sceneName, float delay)
-	{
-		yield return new WaitForSeconds(delay);
-		SceneManager.LoadScene(sceneName);
 	}
 }

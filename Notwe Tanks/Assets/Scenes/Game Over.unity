@@ -598,7 +598,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 740732637}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8352834193277206125, guid: 6d4998e167af7b841933c7dc6edf80a5, type: 3}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &740732637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,9 +801,10 @@ GameObject:
   m_Component:
   - component: {fileID: 825859908}
   - component: {fileID: 825859910}
+  - component: {fileID: 825859911}
   - component: {fileID: 825859909}
   m_Layer: 5
-  m_Name: Winner
+  m_Name: Winner Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -864,7 +877,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 262.7
+  m_fontSize: 262.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -914,6 +927,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825859907}
   m_CullTransparentMesh: 1
+--- !u!114 &825859911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825859907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fbd2e99c7412b943836bf2f49812e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 825859909}
 --- !u!1 &1257129848
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +1023,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1257129851}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8352834193277206125, guid: 6d4998e167af7b841933c7dc6edf80a5, type: 3}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1257129851
 MonoBehaviour:
   m_ObjectHideFlags: 0
