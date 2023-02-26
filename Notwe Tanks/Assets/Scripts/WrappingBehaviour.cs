@@ -14,21 +14,21 @@ public class WrappingBehaviour : MonoBehaviour
     void Update()
     {
 		Vector3 pos = transform.position;
-		if (transform.position.x > 80)
+		if (transform.position.x > 26)
 		{
-			pos.x = -79;
+			pos.x = -25;
 		}
-		else if (transform.position.x < -80)
+		else if (transform.position.x < -26)
 		{
-			pos.x = 79;
+			pos.x = 25;
 		}
-		else if (transform.position.y > 45)
+		else if (transform.position.y > 17)
 		{
-			pos.y = -44;
+			pos.y = -16;
 		}
-		else if (transform.position.y < -45)
+		else if (transform.position.y < -17)
 		{
-			pos.y = 44;
+			pos.y = 16;
 		}
 		transform.position = pos;
 	}
