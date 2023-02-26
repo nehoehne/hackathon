@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -9,7 +8,9 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
 	[SerializeField] float speed = 20;
-	public int thing;
+	[SerializeField] GameObject explosionPrefab;
+
+
 	private Rigidbody2D myBody;
 
 	public PlayerEnum ShotBy { get; set; }
@@ -19,19 +20,27 @@ public class Bullet : MonoBehaviour
 
 	private bool canDamage = false;
 
+	const float MAX_LIFETIME = 10;
+
 
 	void Awake()
 	{
-		Debug.Log("Bullet has been shot");
-		//called once
-
 		myBody = gameObject.GetComponent<Rigidbody2D>();
 	}
 
-	// Start is called before the first frame update
-	void Start()
+	private void Start ()
 	{
-		Destroy(gameObject, 5f);
+		Destroy(gameObject, MAX_LIFETIME);
+	}
+
+	private void OnDestroy ()
+	{
+		OnBulletDestroyed?.Invoke(ShotBy);
+		Instantiate(
+			explosionPrefab,
+			transform.position,
+			transform.rotation
+		);
 	}
 
 	public void InitBullet(Tank tank)
@@ -48,14 +57,6 @@ public class Bullet : MonoBehaviour
 
 			OnBulletDestroyed?.Invoke(ShotBy);
 			Destroy(gameObject);
-		}
-	}
-
-	private void OnTriggerExit2D (Collider2D collision)
-	{
-		Tank tank = collision.GetComponent<Tank>();
-		if( tank != null && tank.GetPlayer == ShotBy ) {
-			canDamage = true;
 		}
 	}
 }

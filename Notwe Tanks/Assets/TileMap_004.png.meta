@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -10284,8 +10284,8 @@ TextureImporter:
       TileMap_004_84: 898538565
       TileMap_004_430: -301843279
       TileMap_004_112: 1511300669
-      TileMap_004_179: 1569904333
       TileMap_004_392: 733116763
+      TileMap_004_179: 1569904333
       TileMap_004_337: -1412833377
       TileMap_004_413: 2097707828
       TileMap_004_348: 1356302701
@@ -10386,14 +10386,14 @@ TextureImporter:
       TileMap_004_94: 316105475
       TileMap_004_11: -106545879
       TileMap_004_211: 1075621913
-      TileMap_004_56: -2116958176
       TileMap_004_259: 601335023
+      TileMap_004_56: -2116958176
       TileMap_004_350: -1901897970
       TileMap_004_419: 125512384
-      TileMap_004_163: -1645160749
-      TileMap_004_249: -2046251956
       TileMap_004_440: -1351266123
+      TileMap_004_163: -1645160749
       TileMap_004_217: -392699556
+      TileMap_004_249: -2046251956
       TileMap_004_453: 1380817929
       TileMap_004_437: -523022304
       TileMap_004_227: 109077648
@@ -10562,8 +10562,8 @@ TextureImporter:
       TileMap_004_0: -1970348104
       TileMap_004_98: 829916236
       TileMap_004_151: -203905960
-      TileMap_004_372: 211376138
       TileMap_004_421: 1777544347
+      TileMap_004_372: 211376138
       TileMap_004_68: 813878333
       TileMap_004_146: 1255609878
       TileMap_004_186: 1848525255
