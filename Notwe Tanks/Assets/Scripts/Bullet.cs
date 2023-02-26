@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -54,17 +53,10 @@ public class Bullet : MonoBehaviour
 
 	private void OnTriggerEnter2D (Collider2D collision)
 	{
-		if( canDamage )
-		{
-			Destroy(gameObject);
-		}
-	}
+		if( canDamage ) {
 
-	private void OnTriggerExit2D (Collider2D collision)
-	{
-		Tank tank = collision.GetComponent<Tank>();
-		if( tank != null && tank.GetPlayer == ShotBy ) {
-			canDamage = true;
+			OnBulletDestroyed?.Invoke(ShotBy);
+			Destroy(gameObject);
 		}
 	}
 }

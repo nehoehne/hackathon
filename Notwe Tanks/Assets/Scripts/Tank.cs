@@ -27,6 +27,7 @@ public class Tank : MonoBehaviour
 	int numBullets;
 	int lives;
 
+	private AudioSource audioSource;
 	public PlayerEnum GetPlayer => playerEnum;
 
 	float moveInput;
@@ -42,6 +43,7 @@ public class Tank : MonoBehaviour
 	// Start is called before the first frame update
 	void Start ()
 	{
+		audioSource = GetComponent<AudioSource>();
 		SetBullets(GameConfig.StartBullets);
 		SetLives(GameConfig.StartLives);		
 	}
@@ -113,6 +115,7 @@ public class Tank : MonoBehaviour
 			numBullets--;
 			NotifyBulletsChanged();
 			cooldown = cooldownTime;
+			audioSource.Play();
 		}
 	}
 
