@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
 	const float MAX_LIFETIME = 10;
 
 
-	void Awake()
+	void Awake ()
 	{
 		myBody = gameObject.GetComponent<Rigidbody2D>();
 	}
@@ -43,20 +43,26 @@ public class Bullet : MonoBehaviour
 		);
 	}
 
-	public void InitBullet(Tank tank)
-	{
-		myBody.velocity = tank.transform.up * speed;
-		Debug.Log(transform.forward);
-		ShotBy = tank.GetPlayer;
-	}
-
-
 	private void OnTriggerEnter2D (Collider2D collision)
 	{
 		if( canDamage ) {
 
-			OnBulletDestroyed?.Invoke(ShotBy);
 			Destroy(gameObject);
 		}
+	}
+
+	private void OnTriggerExit2D (Collider2D collision)
+	{
+		Tank tank = collision.GetComponent<Tank>();
+		if( tank != null && tank.GetPlayer == ShotBy ) {
+			canDamage = true;
+		}
+	}
+
+	public void InitBullet (Tank tank)
+	{
+		myBody.velocity = tank.transform.up * speed;
+		Debug.Log(transform.forward);
+		ShotBy = tank.GetPlayer;
 	}
 }
