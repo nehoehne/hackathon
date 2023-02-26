@@ -27,8 +27,6 @@ public class Tank : MonoBehaviour
 	int numBullets;
 	int lives;
 
-
-	private Rigidbody2D rigidbody2;
 	private AudioSource audioSource;
 	public PlayerEnum GetPlayer => playerEnum;
 
@@ -45,7 +43,6 @@ public class Tank : MonoBehaviour
 	// Start is called before the first frame update
 	void Start ()
 	{
-		numBullets = INITIAL_NUM_BULLETS;
 		audioSource = GetComponent<AudioSource>();
 		SetBullets(GameConfig.StartBullets);
 		SetLives(GameConfig.StartLives);		
