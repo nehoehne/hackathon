@@ -61,14 +61,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2016025273618477893}
     m_Modifications:
-    - target: {fileID: 2967262590602520437, guid: bcdc7f479d84c0540a63957aa19d210b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2967262590602520437, guid: bcdc7f479d84c0540a63957aa19d210b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6300173516687389877, guid: bcdc7f479d84c0540a63957aa19d210b, type: 3}
       propertyPath: m_Name
       value: Bullets
@@ -76,7 +68,7 @@ PrefabInstance:
     - target: {fileID: 8488817270449751831, guid: bcdc7f479d84c0540a63957aa19d210b, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: fe5514f3fa02dc34b9ad7aa70daef05f, type: 3}
+      objectReference: {fileID: 21300000, guid: 61ac40b257b3a994f841856ad38b2b6b, type: 3}
     - target: {fileID: 9068031157153653854, guid: bcdc7f479d84c0540a63957aa19d210b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -16,8 +15,6 @@ public class Bullet : MonoBehaviour
 
 	public delegate void BulletEvent (PlayerEnum playerEnum);
 	public static event BulletEvent OnBulletDestroyed;
-
-	private bool canDamage = false;
 
 
 	void Awake()
@@ -44,18 +41,14 @@ public class Bullet : MonoBehaviour
 
 	private void OnTriggerEnter2D (Collider2D collision)
 	{
-		if( canDamage ) {
-
-			OnBulletDestroyed?.Invoke(ShotBy);
-			Destroy(gameObject);
+		var tank = collision.GetComponent<Tank>();
+		if (tank != null && tank.GetPlayer == ShotBy) {
+			return;
 		}
-	}
 
-	private void OnTriggerExit2D (Collider2D collision)
-	{
-		Tank tank = collision.GetComponent<Tank>();
-		if( tank != null && tank.GetPlayer == ShotBy ) {
-			canDamage = true;
+		if (OnBulletDestroyed != null) {
+			OnBulletDestroyed(ShotBy);
+			Destroy(gameObject);
 		}
 	}
 }
