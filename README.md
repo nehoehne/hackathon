@@ -14,7 +14,7 @@ This was our project for a 12-hour hackathon. It's a version of Wii Tanks but wi
 * Using Git and technical communication in a fast-paced, collaborative environment
 
 ## Usage
-Download the repo and run the project in Unity (Unity version: 2021.3.19f1 LTS).
+Clone the repo and run the project in Unity (Unity version: 2021.3.19f1 LTS).
 
 ## References 
 ### Sounds
