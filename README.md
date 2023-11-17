@@ -1,6 +1,9 @@
 # Notwe Tanks
 This was our project for a 12-hour hackathon. It's a version of Wii Tanks but with a twist. Each player has limited ammo and if you miss a shot, your opponent gets your shell. Basically dodge ball rules. We learned a lot, had a great time, and ended up winning one of the prizes. 
 
+## Demo Video
+Check out the demo [here](https://drive.google.com/file/d/1iMWMmG0Q8VN2K6pQLXlXHMgHYLiHvie0/view?usp=drive_link).
+
 ## The Team 
 * Kalen Arendt, team Sensei (GitHub: Kalen Arendt) 
 * Edmond Wong, the other guy who knew what he was doing (GitHub: wonge1)
